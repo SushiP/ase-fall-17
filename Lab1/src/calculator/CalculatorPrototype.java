@@ -21,12 +21,11 @@ public class CalculatorPrototype implements CalculatorIF {
     @Override
     public int divide(int m, int n) {
         //Check the input is right.
-        if(n == 0) throw new RuntimeException("You cannot divide by 0");
-        if(m % n != 0) throw new RuntimeException("M is not divisible by n");
+        if(n == 0) throw new ArithmeticException("You cannot divide by 0");
         
         //Compute division using subtraction.
         int result;
-        for(result = 0; m == 0; result++) m -= n;
+        for(result = 0; m >= n; result++) m -= n;
         return result;
     }
 
