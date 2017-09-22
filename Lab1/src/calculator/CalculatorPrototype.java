@@ -14,7 +14,18 @@ public class CalculatorPrototype implements CalculatorIF {
     @Override
     public int sum(int m, int n) {
         int result = m;
+        
         for(int i = 0; i < n; i++) result++;
+        
+        return result;
+    }
+
+    @Override
+    public int subtract(int m, int n) {
+        int result = m;
+        
+        for(int i = 0; i < n; i++) result--;
+        
         return result;
     }
 
@@ -32,9 +43,10 @@ public class CalculatorPrototype implements CalculatorIF {
     @Override
     public int multiply(int m, int n) {
         int result = 0;
-        for(int i=0; i<n ; i++ )
-            result +=n;
-         //Weird comment
+        
+        for(int i = 0; i < m ; i++ )
+            result += n;
+      
         return result;
     }
     
