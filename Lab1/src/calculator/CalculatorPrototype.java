@@ -34,7 +34,7 @@ public class CalculatorPrototype implements CalculatorIF {
         int result = 0;
         for(int i=0; i<n ; i++ )
             result +=n;
-         
+         //Weird comment
         return result;
     }
     
